@@ -1,16 +1,70 @@
 import React from "react";
 import { Fragment } from "react";
+import ai3 from "../../public/robot-svgrepo-com.svg";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
-const navigation = [
-  { name: "Dashboard", href: "#", current: true },
+import Image from "next/image";
+import ai4 from "../../public/robot-svgrepo-com-2.svg";
+import Link from "next/link";
+import { useRouter } from "next/dist/client/router";
+import ai5 from "../../public/BotsDeTrading-3.png";
+import arrow from "../../public/up-arrow-svgrepo-com.svg";
+import fin888 from "../../public/Fin888.png";
+export interface NavigationInterface {
+  name: string;
+  current: boolean;
+  href?: string;
+  childs?: NavChild[];
+}
+export interface NavChild {
+  title: string;
+  description: string;
+  icon: any;
+  href: string;
+  fullText: string;
+  rendement: string;
+}
+export const navigation: NavigationInterface[] = [
+  { name: "Accueil", current: false, href: "/" },
+  {
+    name: "Robots de trading",
+    current: true,
+    childs: [
+      {
+        title: "Auto trade gold 5.0",
+        description: "marché de l'or",
+        fullText:
+          "Autotrade Gold 5.0 est un robot de trading qui trade l'or (XAU/USD) avec une gestion à faible risque et une stratégie de scalping à court terme",
+        // "AutoTrade Gold 5.0 est un robot de trading indonésien qui fonctionne automatiquement sur le marché des ETF (paire XAU/USD).",
+        icon: ai5,
+        href: "/Panthera",
+        rendement: "10%-15%",
+      },
+      {
+        title: "Fin888",
+        description: "marché du forex",
+        fullText:
+          "Fin888 est un robot de trading automatique qui trade le marché du forex. avec une gestion à faible risque et une stratégie de scalping à court terme",
+        icon: fin888,
+        href: "/Samtrade",
+        rendement: "8%-10%",
+      },
+    ],
+  },
   { name: "Team", href: "#", current: false },
   { name: "Projects", href: "#", current: false },
   { name: "Calendar", href: "#", current: false },
 ];
 const Navigation = () => {
+  const { asPath } = useRouter();
+  const IsCurrentPage = (item: string): boolean => {
+    return asPath.toLowerCase() === item.toLowerCase();
+  };
   return (
     <div>
-      <Disclosure as="nav" className="bg-gray-800*/">
+      <Disclosure
+        as="nav"
+        className="bg-gray-800*/ bg-white*/   border-gray-700 mb-1*/"
+      >
         {({ open }) => (
           <>
             <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
@@ -29,126 +83,133 @@ const Navigation = () => {
                       src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
                       alt="Workflow"
                     />
-                    <img
+                    {/* <img
                       className="hidden lg:block h-8 w-auto"
                       src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg"
                       alt="Workflow"
-                    />
-                  </div>
-                  <div className="hidden sm:block sm:ml-6">
-                    <div className="flex space-x-4">
-                      {navigation.map((item) => (
-                        <a
-                          key={item.name}
-                          href={item.href}
-                          className={`${
-                            item.current
-                              ? "bg-gray-900 text-white"
-                              : "text-gray-300 hover:bg-gray-700 hover:text-white"
-                          }
-                          px-3 py-2 rounded-md text-sm font-medium`}
-                          aria-current={item.current ? "page" : undefined}
-                        >
-                          {item.name}
-                        </a>
-                      ))}
+                    /> */}
+                    <div className="hidden lg:align-middle place-content-center lg:flex h-8 w-auto ">
+                      <img src={"/robot-svgrepo-com.svg"} alt="Workflow" />
+                      <div className="text-center flex items-center font-bold">
+                        <p className="pl-2 italic">Robots trading</p>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                  <button
-                    type="button"
-                    className="bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
-                  >
-                    <span className="sr-only">View notifications</span>
-                    <p>icon</p>{" "}
-                  </button>
 
-                  {/* Profile dropdown */}
-                  <Menu as="div" className="ml-3 relative">
-                    <div>
-                      <Menu.Button className="bg-gray-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
-                        <span className="sr-only">Open user menu</span>
-                        <img
-                          className="h-8 w-8 rounded-full"
-                          src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                          alt=""
-                        />
-                      </Menu.Button>
-                    </div>
-                    <Transition
-                      as={Fragment}
-                      enter="transition ease-out duration-100"
-                      enterFrom="transform opacity-0 scale-95"
-                      enterTo="transform opacity-100 scale-100"
-                      leave="transition ease-in duration-75"
-                      leaveFrom="transform opacity-100 scale-100"
-                      leaveTo="transform opacity-0 scale-95"
-                    >
-                      <Menu.Items className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
-                        <Menu.Item>
-                          {({ active }) => (
-                            <a
-                              href="#"
-                              className={`${
-                                active ? "bg-gray-100" : ""
-                              } block px-4 py-2 text-sm text-gray-700`}
-                            >
-                              Your Profile
-                            </a>
+                  <div className="hidden sm:block sm:ml-6 lg:ml-12 lg:flex space-x-4 t">
+                    {navigation.map(
+                      (item: NavigationInterface, index: number) => (
+                        <React.Fragment key={index}>
+                          {!item.childs ? (
+                            <>
+                              <Menu>
+                                <Link
+                                  href={
+                                    item.href?.toLowerCase()
+                                      ? item.href.toLocaleLowerCase()
+                                      : ""
+                                  }
+                                >
+                                  <a
+                                    className={`${
+                                      IsCurrentPage(
+                                        item.href !== undefined ? item.href : ""
+                                      )
+                                        ? "border-b text-black"
+                                        : "text-gray-300"
+                                    } mx-0.5 hover:bg-[#39374E] text-sm lg:text-lg hover:text-white px-3 py-2 rounded-lg font-medium`}
+                                    aria-current={
+                                      asPath.toLowerCase() === item.name
+                                        ? "page"
+                                        : undefined
+                                    }
+                                  >
+                                    {item.name}
+                                  </a>
+                                </Link>
+                              </Menu>
+                            </>
+                          ) : (
+                            <Menu as="div" className="relativeext-left">
+                              <div>
+                                <Menu.Button className="group mx-0.5 hover:bg-[#39374E] lg:text-lg hover:text-white px-3 py-2 rounded-lg text-sm font-medium inline-flex justify-center w-full text-black hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
+                                  {({ open }) => (
+                                    <div className="flex place-items-center place-content-center h-full">
+                                      {item.name}
+                                      <div className="w-4 h-full ml-2 pt-1 flex place-items-center duration-150">
+                                        <Image
+                                          src={arrow}
+                                          className={`${
+                                            open
+                                              ? "rotate-180 transition-all"
+                                              : "rotate-0 transition-all "
+                                          }`}
+                                        />
+                                      </div>
+                                    </div>
+                                  )}
+                                </Menu.Button>
+
+                                <Transition
+                                  as={Fragment}
+                                  enter="transition ease-out duration-100"
+                                  enterFrom="transform opacity-0 scale-95"
+                                  enterTo="transform opacity-100 scale-100"
+                                  leave="transition ease-in duration-75"
+                                  leaveFrom="transform opacity-100 scale-100"
+                                  leaveTo="transform opacity-0 scale-95"
+                                >
+                                  <Menu.Items className="absolute w-60 mt-2 origin-top-right bg-white divide-y divide-gray-100 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                                    <div className="py-2">
+                                      {item.childs &&
+                                        item.childs.map(
+                                          (child: NavChild, index: number) => (
+                                            <Menu.Item key={index}>
+                                              {({ active }) => (
+                                                <NextLink
+                                                  href={child.href}
+                                                  className={`${
+                                                    active
+                                                      ? "text-gray-400 transition-all duration-300 ease-in-out translate-x-2"
+                                                      : "text-black transition-all duration-300 ease-in-out translate-x-0"
+                                                  }  ${
+                                                    asPath.toLowerCase() ===
+                                                    item.href?.toLowerCase()
+                                                      ? "bg-gray-100 text-white"
+                                                      : ""
+                                                  } p-3 flex items-start rounded-lg`}
+                                                >
+                                                  <div className="flex">
+                                                    <div className="w-10 h-10 mr-3">
+                                                      <Image src={child.icon} />
+                                                    </div>
+                                                    <div className="flex flex-col text-left ">
+                                                      <p className="font-semibold">
+                                                        {child.title}
+                                                      </p>
+                                                      <p className="text-gray-500 text-xs">
+                                                        {child.description}
+                                                      </p>
+                                                    </div>
+                                                  </div>
+                                                </NextLink>
+                                              )}
+                                            </Menu.Item>
+                                          )
+                                        )}
+                                    </div>
+                                  </Menu.Items>
+                                </Transition>
+                              </div>
+                            </Menu>
                           )}
-                        </Menu.Item>
-                        <Menu.Item>
-                          {({ active }) => (
-                            <a
-                              href="#"
-                              className={`${
-                                active ? "bg-gray-100" : ""
-                              } block px-4 py-2 text-sm text-gray-700`}
-                            >
-                              Settings
-                            </a>
-                          )}
-                        </Menu.Item>
-                        <Menu.Item>
-                          {({ active }) => (
-                            <a
-                              href="#"
-                              className={`${
-                                active ? "bg-gray-100" : ""
-                              } block px-4 py-2 text-sm text-gray-700'`}
-                            >
-                              Sign out
-                            </a>
-                          )}
-                        </Menu.Item>
-                      </Menu.Items>
-                    </Transition>
-                  </Menu>
+                        </React.Fragment>
+                      )
+                    )}
+                  </div>
                 </div>
               </div>
             </div>
-
-            <Disclosure.Panel className="sm:hidden">
-              <div className="px-2 pt-2 pb-3 space-y-1">
-                {navigation.map((item) => (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    className={`${
-                      item.current
-                        ? "bg-gray-900 text-white"
-                        : "text-gray-300 hover:bg-gray-700 hover:text-white"
-                    }
-                    block px-3 py-2 rounded-md text-base font-medium'
-                    `}
-                    aria-current={item.current ? "page" : undefined}
-                  >
-                    {item.name}
-                  </a>
-                ))}
-              </div>
-            </Disclosure.Panel>
           </>
         )}
       </Disclosure>
@@ -157,3 +218,12 @@ const Navigation = () => {
 };
 
 export default Navigation;
+
+function NextLink(props: any) {
+  const { href, children, ...rest } = props;
+  return (
+    <Link href={href}>
+      <a {...rest}>{children}</a>
+    </Link>
+  );
+}
