@@ -24,7 +24,7 @@ export interface NavChild {
   rendement: string;
 }
 export const navigation: NavigationInterface[] = [
-  { name: "Accueil", current: false, href: "/" },
+  // { name: "Accueil", current: false, href: "/" },
   {
     name: "Robots de trading",
     current: true,
@@ -36,7 +36,7 @@ export const navigation: NavigationInterface[] = [
           "Autotrade Gold 5.0 est un robot de trading qui trade l'or (XAU/USD) avec une gestion à faible risque et une stratégie de scalping à court terme",
         // "AutoTrade Gold 5.0 est un robot de trading indonésien qui fonctionne automatiquement sur le marché des ETF (paire XAU/USD).",
         icon: ai5,
-        href: "/Panthera",
+        href: "/fin888",
         rendement: "10%-15%",
       },
       {
@@ -61,10 +61,7 @@ const Navigation = () => {
   };
   return (
     <div>
-      <Disclosure
-        as="nav"
-        className="bg-gray-800*/ bg-white*/   border-gray-700 mb-1*/"
-      >
+      <Disclosure as="nav" className="">
         {({ open }) => (
           <>
             <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
@@ -88,12 +85,14 @@ const Navigation = () => {
                       src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg"
                       alt="Workflow"
                     /> */}
-                    <div className="hidden lg:align-middle place-content-center lg:flex h-8 w-auto ">
-                      <img src={"/robot-svgrepo-com.svg"} alt="Workflow" />
-                      <div className="text-center flex items-center font-bold">
-                        <p className="pl-2 italic">Robots trading</p>
+                    <NextLink href="/">
+                      <div className="hidden lg:align-middle place-content-center lg:flex h-8 w-auto ">
+                        <img src={"/robot-svgrepo-com.svg"} alt="Workflow" />
+                        <div className="text-center flex items-center font-bold">
+                          <p className="pl-2">Robots trading</p>
+                        </div>
                       </div>
-                    </div>
+                    </NextLink>
                   </div>
 
                   <div className="hidden sm:block sm:ml-6 lg:ml-12 lg:flex space-x-4 t">
