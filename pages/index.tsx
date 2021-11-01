@@ -13,7 +13,8 @@ import cash from "../public/cash-svgrepo-com.svg";
 import compte from "../public/online-shop-svgrepo-com.svg";
 import deposit from "../public/deposit.svg";
 import cashout from "../public/cashout.svg";
-
+import warning from "../public/duotone-user-warning-svgrepo-com.svg";
+import Link from "next/link";
 import Navigation, {
   NavChild,
   navigation,
@@ -138,9 +139,14 @@ const Home: NextPage = () => {
         <h1 className="text-center text-4xl py-8 text-black font-bold">
           LES ROBOTS
         </h1>
-        <p className="text-center text-xl py-8 text-gray-400 font-bold">
-          les robots proposé sont testé depuis des mois.
-        </p>
+        <div className="text-center text-lg text-gray-500 pb-8 space-y-2 font-semibold">
+          <p className="">
+            Chaque robot proposés sur le site à été testé depuis plusieurs moi.
+          </p>
+          <p className="">
+            Nous ne proposong pas de robots non testé par notre équipe.
+          </p>
+        </div>
         <div className="flex space-x-8 mx-auto place-content-center">
           {navigation.map((nav: NavigationInterface, index: number) => (
             <React.Fragment key={index}>
@@ -161,9 +167,11 @@ const Home: NextPage = () => {
                   <div className="text-center h-3/6 flex place-content-around flex-col">
                     <p className="text-2xl font-bold text-white">{nav.title}</p>
                     <p className="text-gray-300">{nav.fullText}</p>
-                    <button className="rounded-lg px-4 py-2 bg-[#DF9622] text-white">
-                      création du compte
-                    </button>
+                    <Link href="/fin888">
+                      <a className="rounded-lg px-4 py-2 bg-[#DF9622] text-white">
+                        création du compte
+                      </a>
+                    </Link>
                   </div>
                 </div>
               ))}
@@ -172,13 +180,21 @@ const Home: NextPage = () => {
         </div>
       </section>
       <section className="bg-gray-600s bg-[#DF9622]/ bg-cover bg-center bg-no-repeat  bg-hero-pattern4 bg-opacity-25  mt-20 py-10">
-        <h1 className="text-center text-4xl py-8 text-white font-bold">
-          NOUS VOUS AIDONS
-        </h1>
-        <div className="flex space-x-3 place-content-center pt-4">
+        <div className="py-8 space-y-4">
+          <h1 className="text-center text-4xl text-white font-bold">
+            NOUS VOUS AIDONS
+          </h1>
+          <p className="text-center text-gray-400">
+            nous vous montrons comment faire toutes les etapes d'un rotob, ceci
+            vous permetera de savoir tout faire et de n'etre jamais bloqué
+          </p>
+        </div>
+        <div className="flex space-x-3 place-content-center pt-4 pb-20">
           {aide.map((card: Card, index: number) => (
             <div
               key={index}
+              //  className="shadow-xl justify-around rounded-full p-10 text-center flex flex-col border border-black w-72 h-72"
+
               className=" z-10 w-96 bg-gray-800/ bg-[#4B5563] rounded-lg text-white text-center p-4 space-y-2"
             >
               <div
@@ -194,9 +210,25 @@ const Home: NextPage = () => {
           ))}
         </div>
       </section>
-      <div className="w-full bg-white">
-        <p className="text-center">test</p>
-      </div>
+      <section className="bg-gray-600 pb-4 pt-10">
+        <div className="max-w-7xl mx-auto flex space-x-7 place-content-center items-center">
+          <div className="">
+            <div
+              className={`w-20 flex place-content-center align-middle text-center items-center mx-auto`}
+            >
+              <Image src={warning} className="" />
+            </div>
+          </div>
+          <p className="text-center text-white">
+            Nous avons pour objectif de vous offrir des tutoriels d'inscription,
+            de dépôts et retraits de capital pour différents robots de trading.
+            Nous ne sommes pas un conseiller financier. Il vous est fort
+            recommandé de faire vos propres vérifications avant d'investir sur
+            un des robots. Le site robot-trading.club ne serra en aucun cas
+            responsabilité pour toutes pertes liées à l'investissement.
+          </p>
+        </div>
+      </section>
     </div>
   );
 };
