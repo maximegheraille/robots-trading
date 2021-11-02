@@ -1,5 +1,4 @@
 import React from "react";
-import compte from "../public/online-shop-svgrepo-com.svg";
 import deposit from "../public/deposit.svg";
 import cashout from "../public/cashout.svg";
 import computer from "../public/computer-svgrepo-com.svg";
@@ -13,7 +12,7 @@ interface tuto {
   icon: any;
   to: string;
 }
-const Fin888 = () => {
+const autotradegold = () => {
   const tuto: tuto[] = [
     {
       title: "La creation d'un compte sur chaque robots",
@@ -223,7 +222,7 @@ const Fin888 = () => {
               >
                 OUVERTURE DU COMPTE TRADING
               </h1>
-              <p>Pendats que l'equipe valide votre compte vous pouvez déja activer votre comptre tradin via <span className="text-[#DF9622]"> Trading Account > Open Live Account</span>.</p>                <p> l'IB de référence IB75214800</p>
+              <p>Pendats que l'equipe valide votre compte vous pouvez déja activer votre comptre tradin via <span className="text-[#DF9622]"> Trading Account &gt; Open Live Account</span>.</p>                <p> l'IB de référence IB75214800</p>
               <p><span className="text-[#DF9622]">Broker</span>: LegoMarket LCC</p>
               <p><span className="text-[#DF9622]">Account Type</span>: GOLD</p>
               <p><span className="text-[#DF9622]">Leverage</span>: 1:500</p>
@@ -273,4 +272,4 @@ const Fin888 = () => {
   );
 };
 
-export default Fin888;
+export default autotradegold;
