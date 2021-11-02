@@ -36,7 +36,7 @@ export const navigation: NavigationInterface[] = [
           "Autotrade Gold 5.0 est un robot de trading qui trade l'or (XAU/USD) avec une gestion à faible risque et une stratégie de scalping à court terme",
         // "AutoTrade Gold 5.0 est un robot de trading indonésien qui fonctionne automatiquement sur le marché des ETF (paire XAU/USD).",
         icon: ai5,
-        href: "/fin888",
+        href: "/autotradegold",
         rendement: "10%-15%",
       },
       {
