@@ -74,7 +74,7 @@ const Home: NextPage = () => {
           <p className="font-semibold text-4xl text-black mb-5 mt-10 text-left w-full">
             Robots de Trading
           </p>
-          <div className="font-semibold text-lg text-gray-600 space-y-4">
+          <div className="font-normal text-base text-gray-600 space-y-4">
             <p className="">
               Un robot de trading (aussi appelé « Expert Advisor ») est un
               logiciel dédié à la
