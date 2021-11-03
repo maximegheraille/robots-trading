@@ -369,7 +369,6 @@ const autotradegold = () => {
                   href="https://pansaka.co.id/panel/upgrade-special.php"
                   target="_blank"
                   rel="noopener"
-                  className="rounded-lg px-4 py-2 bg-[#DF9622] text-white"
                 >
                   <span className="text-[#DF9622]">
                     &nbsp;Special Program &gt; Buy Future Package
