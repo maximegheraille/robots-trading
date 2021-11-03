@@ -251,7 +251,7 @@ const autotradegold = () => {
                 <span className="text-[#DF9622]">ID Card</span>: Télécharger une
                 photo de votre carte d'identité sur{" "}
                 <a rel="noopener" href="https://imglink.io/">
-                  imglink.io
+                  imglink.io&nbsp;
                 </a>
                 et poster l'URL dans le champ
               </p>
@@ -260,7 +260,7 @@ const autotradegold = () => {
                 Télécharger une photo de votre visage avec votre carte
                 d'identité visible a coté sur{" "}
                 <a rel="noopener" href="https://imglink.io/">
-                  imglink.io
+                  imglink.io&nbsp;
                 </a>
                 et poster l'URL dans le champ
               </p>
@@ -283,10 +283,15 @@ const autotradegold = () => {
               <p>
                 Pendats que l'equipe valide votre compte vous pouvez déja
                 activer votre comptre trading via
-                <span className="text-[#DF9622]">
-                  {" "}
-                  Trading Account &gt; Open Live Account
-                </span>
+                <a
+                  href="https://pantheratrade.live/user/open_live_account"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <span className="text-[#DF9622]">
+                    &nbsp;Trading Account &gt; Open Live Account
+                  </span>
+                </a>
                 .
               </p>
               <p>
@@ -360,10 +365,16 @@ const autotradegold = () => {
               </h1>
               <p>
                 Pour acheter votre license, selectionez dans le menu
-                <span className="text-[#DF9622]">
-                  {" "}
-                  Special Program &gt; Buy Future Package
-                </span>
+                <a
+                  href="https://pansaka.co.id/panel/upgrade-special.php"
+                  target="_blank"
+                  rel="noopener"
+                  className="rounded-lg px-4 py-2 bg-[#DF9622] text-white"
+                >
+                  <span className="text-[#DF9622]">
+                    &nbsp;Special Program &gt; Buy Future Package
+                  </span>
+                </a>
                 .
               </p>
               <p>
