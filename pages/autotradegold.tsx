@@ -714,7 +714,7 @@ const autotradegold = () => {
               <p>Par example: requit 0.1428 LTC devient 0.1438 au final.</p>
               <p>
                 Un email de confirmation de paiment vous serra unvoyé a l'email
-                indique dans l'étape d'avant
+                indique dans l'étape d'avant.
               </p>
               <p>
                 Une fois la transaction fini, vous recevez un email de
