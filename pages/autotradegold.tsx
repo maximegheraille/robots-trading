@@ -162,14 +162,14 @@ const autotradegold = () => {
         </div>
       </div>
 
-      <section className="pt-40 max-w-5xl mx-auto">
+      <section className="pt-40 max-w-7xl mx-auto">
         <h1
           className="text-center text-4xl py-8 text-black font-bold"
           id="compte"
         >
           CREATION DU COMPTE
         </h1>
-        <div className="max-w-5xl mx-auto flex flex-col">
+        <div className="max-w-7xl mx-auto flex flex-col">
           <p className="font-medium rounded-full text-center text-white bg-gray-500 w-20">
             etape 1
           </p>
@@ -207,7 +207,7 @@ const autotradegold = () => {
           </div>
         </div>
 
-        <div className="max-w-5xl mx-auto flex flex-col pt-20">
+        <div className="max-w-7xl mx-auto flex flex-col pt-20">
           <p className="font-medium rounded-full text-center text-white bg-gray-500 w-20">
             etape 2
           </p>
@@ -271,7 +271,7 @@ const autotradegold = () => {
           </div>
         </div>
 
-        <div className="max-w-5xl mx-auto flex flex-col pt-20">
+        <div className="max-w-7xl mx-auto flex flex-col pt-20">
           <p className="font-medium rounded-full text-center text-white bg-gray-500 w-20">
             etape 3
           </p>
@@ -594,7 +594,7 @@ const autotradegold = () => {
           </div>
         </div>
       </section>
-      <section className="pt-40 max-w-5xl mx-auto">
+      <section className="pt-40 max-w-7xl mx-auto">
         <h1
           className="text-center text-4xl py-8 text-black font-bold"
           id="depots"
