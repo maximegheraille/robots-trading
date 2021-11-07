@@ -50,9 +50,6 @@ export const navigation: NavigationInterface[] = [
       },
     ],
   },
-  { name: "Team", href: "#", current: false },
-  { name: "Projects", href: "#", current: false },
-  { name: "Calendar", href: "#", current: false },
 ];
 const Navigation = () => {
   const { asPath } = useRouter();
