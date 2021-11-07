@@ -190,7 +190,7 @@ const Home: NextPage = () => {
             vous permetera de savoir tout faire et de n'etre jamais bloqué
           </p>
         </div>
-        <div className="flex flex-col lg:flex-row space-y-3 lg:space-y-0 lg:space-x-3 place-content-center pt-4 pb-20">
+        <div className="flex flex-col items-center lg:flex-row space-y-3 lg:space-y-0 lg:space-x-3 place-content-center pt-4 pb-20">
           {aide.map((card: Card, index: number) => (
             <div
               key={index}
