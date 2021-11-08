@@ -550,6 +550,7 @@ const autotradegold = () => {
                   href="https://atg-system.com/login"
                   target="_blank"
                   rel="noopener"
+                  className="font-bold"
                 >
                   &nbsp;atg-system&nbsp;
                 </a>
@@ -558,8 +559,8 @@ const autotradegold = () => {
               </p>
               <p>
                 <span className="text-[#DF9622]">Voucher ID:</span>&nbsp;
-                Rajouter bien <span className="font-bold italic"> 0,001</span>
-                &nbsp; au prix final.
+                indiquer le <span className="italic">Voucher ID</span> reçu dans
+                le mail de atg-system.com
               </p>
               <p>
                 <span className="text-[#DF9622]">Voucher Code:</span>&nbsp;
