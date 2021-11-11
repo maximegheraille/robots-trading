@@ -53,7 +53,7 @@ const Home: NextPage = () => {
   const aide: { title: string; description: string; icon: any }[] = [
     {
       title: "Compte",
-      description: "La creation d'un compte sur chaque robots",
+      description: "La création d'un compte sur chaque robots",
       icon: compte,
     },
     {
@@ -168,7 +168,7 @@ const Home: NextPage = () => {
                   <div className="text-center h-3/6 flex place-content-around flex-col">
                     <p className="text-2xl font-bold text-white">{nav.title}</p>
                     <p className="text-gray-300">{nav.fullText}</p>
-                    <Link href="/fin888">
+                    <Link href="/autotradegold">
                       <a className="rounded-lg px-4 py-2 bg-[#DF9622] text-white">
                         création du compte
                       </a>
