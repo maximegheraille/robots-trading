@@ -92,8 +92,8 @@ const Home: NextPage = () => {
               manière passive, sécurisée.
             </p>
             <p>
-              Nous sommes la pour vous monter comment créee votre compte,
-              deposer de l'argent et faire des retraits. N'investissez que le
+              Nous sommes là pour vous montrer comment créer votre compte,
+              déposer de l'argent et faire des retraits. N'investissez que le
               montant que vous êtes prêt à perdre.
             </p>
             <div className="pt-4">
@@ -142,10 +142,10 @@ const Home: NextPage = () => {
         </h1>
         <div className="text-left lg:text-center text-lg text-gray-500 pb-8 space-y-2 font-semibold">
           <p className="">
-            Chaque robot proposés sur le site à été testé depuis plusieurs moi.
+            Chaque robot proposé sur le site a été testé depuis plusieurs moi.{" "}
           </p>
           <p className="">
-            Nous ne proposong pas de robots non testé par notre équipe.
+            Nous ne proposons pas de robots non testés par notre équipe.{" "}
           </p>
         </div>
         <div className="flex flex-col items-center justify-center space-y-3 lg:space-y-0 lg:flex-row lg:space-x-8 mx-auto place-content-center">
@@ -186,8 +186,8 @@ const Home: NextPage = () => {
             NOUS VOUS AIDONS
           </h1>
           <p className="text-center text-gray-300 lg:text-gray-400">
-            nous vous montrons comment faire toutes les etapes d'un rotob, ceci
-            vous permetera de savoir tout faire et de n'etre jamais bloqué
+            Nous vous montrons comment faire toutes les étapes d'un robot, ceci
+            vous permettra de savoir tout faire et de n'etre jamais bloqué
           </p>
         </div>
         <div className="flex flex-col items-center lg:flex-row space-y-3 lg:space-y-0 lg:space-x-3 place-content-center pt-4 pb-20">
