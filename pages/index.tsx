@@ -76,25 +76,30 @@ const Home: NextPage = () => {
           </p>
           <div className="font-normal text-base text-gray-500 space-y-4">
             <p className="">
-              Un robot de trading (aussi appelé « Expert Advisor ») est un
-              logiciel dédié à la
-              <span className="text-[#DF9622]"> pratique du trading.</span>
+              Un Robot de Trading est algorithme informatique capable d’analyser
+              le marché et d’ouvrir et de clôturer des positions de manière
+              autonome en fonction des tendances observées.
+              {/* <span className="text-[#DF9622]"> pratique du trading.</span> */}
             </p>
             <p className="">
-              C’est un outil automatisé permettant de passer automatiquement des
-              ordres, par exemple sur le marché des options binaires, pour
-              percevoir un
-              <span className="text-[#DF9622]"> revenu passif.</span>
+              Le gros avantage (pour son utilisateur) est qu'il ne faut donc
+              aucune connaissance en trading pour l'utiliser et générer ainsi
+              <span className="text-[#DF9622]">
+                &nbsp;des revenus passifs&nbsp;
+              </span>
+              facilement.
             </p>
             <p className="">
-              Système propulsé par l'intelligence artificielle pour profiter du
-              <span className="text-[#DF9622]"> trading automatisé </span>de
-              manière passive, sécurisée.
+              C'est le Robot qui décidera du type d'ordre à passer et à quel
+              moment le passer pour
+              <span className="text-[#DF9622]"> maximiser vos revenus.</span>
             </p>
             <p>
-              Nous sommes là pour vous montrer comment créer votre compte,
-              déposer de l'argent et faire des retraits. N'investissez que le
-              montant que vous êtes prêt à perdre.
+              Les ordres (de type « scalping ») passés par ces robots ne durent
+              que quelques minutes et offrent un rendement moyen
+              particulièrement élevé. Nous avons testé différents robots de ce
+              type pendant plusieurs mois et ce site propose ceux qui ont le
+              plus retenu notre attention.
             </p>
             <div className="pt-4">
               <a
