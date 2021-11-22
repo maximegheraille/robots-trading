@@ -74,17 +74,18 @@ const Home: NextPage = () => {
           <div className="font-normal text-base text-gray-500 space-y-4">
             <p className="">
               Un Robot de Trading est algorithme informatique capable d’analyser
-              le marché et d’ouvrir et de clôturer des positions de manière
+              le marché et d’ouvrir ou clôturer des positions de manière
               <span className="text-[#DF9622]">&nbsp;autonome&nbsp;</span>en
               fonction des tendances observées.
             </p>
             <p className="">
               Le gros avantage (pour son utilisateur) est qu'il ne faut donc
               aucune connaissance en trading pour l'utiliser et générer ainsi
+              très facilement des
               <span className="text-[#DF9622]">
                 &nbsp;des revenus passifs&nbsp;
               </span>
-              facilement.
+              .
             </p>
             <p className="">
               C'est le Robot qui décidera du type d'ordre à passer et à quel
