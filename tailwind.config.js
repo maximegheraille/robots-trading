@@ -10,6 +10,8 @@ module.exports = {
         "hero-pattern22": "url('/test2.svg')",
         "hero-pattern3": "url('/cool-background.png')",
         "hero-pattern4": "url('/polygon-scatter-haikei.svg')",
+        "hero-pattern5": "url('/testblob.svg')",
+        "fin888-blob2": "url('/testblob2.svg')",
       },
     },
   },
