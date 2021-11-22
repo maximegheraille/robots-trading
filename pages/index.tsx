@@ -25,24 +25,24 @@ interface Card {
 const Home: NextPage = () => {
   const cards: Card[] = [
     {
-      title: "Pas de connaissance requise",
+      title: "Aucune expertise requise",
       icon: smart,
       description:
-        "Déposez votre capital, le robot fera le reste de façon prudente.",
+        "Pas besoin d'être un expert en Trading ou en Finance pour profiter de cette solution. Elle est ouverte à tous !",
       className: "w-20 h-28",
-    },
-    {
-      title: "Gains réguliers",
-      icon: money2,
-      description:
-        "Récupérez vos gains régulièrement et l'ensemble de vos fonds à tout moment.",
-      className: "w-24 h-28",
     },
     {
       title: "C'est le robot qui bosse !",
       icon: ai6,
       description:
         "Inscrivez-vous, déposez vos fonds et laissez trader les robots à votre place.",
+      className: "w-24 h-28",
+    },
+    {
+      title: "Gains réguliers",
+      icon: money2,
+      description:
+        "Récupérez vos gains quand vous le désirez, même votre capital de départ peut être récupéré à tout moment",
       className: "w-24 h-28",
     },
   ];
@@ -121,7 +121,7 @@ const Home: NextPage = () => {
           {cards.map((card: Card, index: number) => (
             <div
               key={index}
-              className="lg:w-96 lg:h-72 shadow-xl p-4 lg:p-8 lg:justify-around rounded-lg  text-center flex flex-col border border-[#DF9622] "
+              className="lg:w-96 lg:h-72 shadow-xl p-4 lg:p-10 lg:justify-around rounded-lg  text-center flex flex-col border border-[#DF9622] "
             >
               <div
                 className={`${
