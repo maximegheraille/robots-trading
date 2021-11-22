@@ -42,7 +42,7 @@ const Home: NextPage = () => {
         "Récupérez vos gains régulièrement et l'ensemble de vos fonds à tout moment.",
     },
     {
-      title: "Presque rien à faire !",
+      title: "C'est le robot qui bosse !",
       icon: ai6,
       description:
         "Inscrivez-vous, déposez vos fonds et laissez trader les robots à votre place.",
