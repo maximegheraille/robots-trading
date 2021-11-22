@@ -68,7 +68,7 @@ const Home: NextPage = () => {
     },
   ];
   return (
-    <div className="lg:p-0 pt-8 min-h-screen">
+    <div className="lg:p-0 lg:pt-8 min-h-screen">
       <section className="p-4 flex-col-reverse flex bg-opacity-10 lg:flex-row max-w-7xl mx-auto">
         <div className=" lg:w-3/6 flex place-items-center flex-col max-w-7xl mx-auto lg:px-8">
           <p className="font-semibold text-4xl text-black mb-5 mt-10 text-left w-full">
