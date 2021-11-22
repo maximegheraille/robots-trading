@@ -1,12 +1,7 @@
 import type { NextPage } from "next";
 import Image from "next/image";
-import ai from "../public/circle-scatter-haikei.svg";
 import ai2 from "../public/undraw_robotics_kep0.svg";
-import ai3 from "../public/blob-scene-haikei.svg";
-import ai4 from "../public/test.svg";
-import ai5 from "../public/smart-money-svgrepo-com.svg";
 import ai6 from "../public/money-svgrepo-com-2.svg";
-import money from "../public/money-svgrepo-com.svg";
 import money2 from "../public/growth-svgrepo-com.svg";
 import smart from "../public/brainstorm-svgrepo-com.svg";
 import cash from "../public/cash-svgrepo-com.svg";
@@ -15,7 +10,7 @@ import deposit from "../public/deposit.svg";
 import cashout from "../public/cashout.svg";
 import warning from "../public/duotone-user-warning-svgrepo-com.svg";
 import Link from "next/link";
-import Navigation, {
+import {
   NavChild,
   navigation,
   NavigationInterface,
@@ -34,19 +29,21 @@ const Home: NextPage = () => {
       icon: smart,
       description:
         "Déposez votre capital, le robot fera le reste de façon prudente.",
+      className: "w-20 h-28",
     },
     {
       title: "Gains réguliers",
       icon: money2,
       description:
         "Récupérez vos gains régulièrement et l'ensemble de vos fonds à tout moment.",
+      className: "w-24 h-28",
     },
     {
       title: "C'est le robot qui bosse !",
       icon: ai6,
       description:
         "Inscrivez-vous, déposez vos fonds et laissez trader les robots à votre place.",
-      className: "w-24",
+      className: "w-24 h-28",
     },
   ];
 
@@ -78,8 +75,8 @@ const Home: NextPage = () => {
             <p className="">
               Un Robot de Trading est algorithme informatique capable d’analyser
               le marché et d’ouvrir et de clôturer des positions de manière
-              autonome en fonction des tendances observées.
-              {/* <span className="text-[#DF9622]"> pratique du trading.</span> */}
+              <span className="text-[#DF9622]">&nbsp;autonome&nbsp;</span>en
+              fonction des tendances observées.
             </p>
             <p className="">
               Le gros avantage (pour son utilisateur) est qu'il ne faut donc
@@ -123,17 +120,16 @@ const Home: NextPage = () => {
           {cards.map((card: Card, index: number) => (
             <div
               key={index}
-              className="lg:w-96 lg:h-72 shadow-xl p-4 lg:p-10 lg:justify-around rounded-lg  text-center flex flex-col border border-[#DF9622] "
-              //className="w-96 bg-gray-600 rounded-lg text-white text-center p-4 space-y-2"
+              className="lg:w-96 lg:h-72 shadow-xl p-4 lg:p-8 lg:justify-around rounded-lg  text-center flex flex-col border border-[#DF9622] "
             >
               <div
                 className={`${
-                  card.className === undefined ? "w-32" : card.className
-                }  h-36 flex place-content-center align-middle text-center items-center mx-auto`}
+                  card.className === undefined ? "w-32 h-36" : card.className
+                }   flex place-content-center align-middle text-center items-center mx-auto`}
               >
                 <Image src={card.icon} className="" />
               </div>
-              <div className="flex-grow space-y-2">
+              <div className="flex-grow space-y-2 ">
                 <p className="text-2xl font-bold">{card.title}</p>
                 <p className="text-gray-600">{card.description}</p>
               </div>
