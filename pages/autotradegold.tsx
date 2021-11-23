@@ -67,16 +67,16 @@ const autotradegold = () => {
     { title: "un capital minimum de 1,000,000$.", prix: "3920$" },
   ];
   return (
-    <div className="pt-8 h-screen ">
+    <div className="pt-8 p-2 lg:p-0 mx-auto">
       <div className="pb-5">
         <section className="text-center flex-col lg:flex-row max-w-7xl mx-auto">
-          <div className="flex place-content-center justify-around items-center">
-            <div className="flex flex-col text-left w-6/12">
+          <div className="flex flex-col lg:flex-row place-content-center justify-around items-center">
+            <div className="flex flex-col text-left lg:w-6/12">
               <div className="text-5xl py-8 text-black font-medium space-y-2">
                 <h1 className="">AutoTrade Gold 5.0</h1>
                 <h1 className="text-[#F5CD44]">Trading Robot</h1>
               </div>
-              <div className="pr-24 font-normal text-gray-500">
+              <div className="lg:pr-24 font-normal text-gray-500">
                 <p>
                   Autotrade gold 5.0 est un robot trading axé sur l’Or. Il a été
                   dévoloppé par la société PT. SDFI, une compagnie Indonésienne
@@ -89,7 +89,7 @@ const autotradegold = () => {
                 </p>
               </div>
             </div>
-            <div className="w-4/12">
+            <div className="w-6/12 lg:w-4/12">
               <Image src={ai5} />
             </div>
           </div>
@@ -99,7 +99,10 @@ const autotradegold = () => {
         <h1 className="text-center text-3xl py-8 text-black font-bold font">
           INFOS PRATIQUES
         </h1>
-        <div className="flex place-content-evenly max-w-7xl mx-auto pb-16">
+        <div
+          className="flex flex-wrap lg:flex-nowrap space-y-4 lg:space-y-0
+         flex-row place-content-evenly max-w-7xl mx-auto pb-16"
+        >
           {infos.map((info: { title: string; prix: string }, index: number) => (
             <div className="shadow-xl justify-around rounded-full p-10 text-center flex flex-col border border-[#DF9622] w-48 h-48">
               <p className="text-2xl font-bold">
@@ -110,13 +113,13 @@ const autotradegold = () => {
           ))}
         </div>
       </section>
-      <section className="pt-20 bg-hero-pattern2 bg-repeat-x">
+      <section className="pt-20 lg:bg-hero-pattern2 bg-repeat-x">
         <div className="">
           <div className="">
             <h1 className="text-center text-4xl py-8 text-black font-bold">
               LES LICENCES
             </h1>
-            <div className="flex flex-wrap place-content-evenly max-w-7xl mx-auto pb-4 item">
+            <div className="flex flex-wrap lg:flex-nowrap space-y-4 lg:space-y-0 place-content-evenly max-w-7xl mx-auto pb-4 item">
               {license.map(
                 (license: { title: string; prix: string }, index: number) => (
                   <div className="p-4 shadow-lg w-52 space-y-4 text-center bg-white rounded-xl">
@@ -138,7 +141,7 @@ const autotradegold = () => {
         <h1 className="text-center text-4xl py-8 text-black font-bold">
           LES TUTORIELS
         </h1>
-        <div className="flex place-content-evenly w-full pb-5">
+        <div className="flex flex-wrap lg:flex-nowrap space-y-4 lg:space-y-0 place-content-evenly w-full pb-5">
           {tuto.map((card: tuto, index: number) => (
             <div
               key={index}

@@ -4,8 +4,8 @@ import cashout from "../public/cashout.svg";
 import computer from "../public/computer-svgrepo-com.svg";
 import Image from "next/image";
 import ai5 from "../public/BotsDeTrading-3.png";
-import part1 from "../public/autotradegold/part1.png";
-import part2 from "../public/autotradegold/part2.png";
+import part1 from "../public/fin888/part1.png";
+import part2 from "../public/fin888/part2.png";
 import part3 from "../public/autotradegold/part3.png";
 import part4 from "../public/autotradegold/part4.png";
 import part5 from "../public/autotradegold/part5.png";
@@ -72,9 +72,9 @@ const fin888 = () => {
     },
   ];
   return (
-    <div className="pt-8 h-screen ">
+    <div className="pt-8 h-screen max-w-7xl">
       <div className="pb-5">
-        <section className="text-center flex-col lg:flex-row max-w-7xl mx-auto">
+        <section className="text-center flex-col lg:flex-row  mx-auto">
           <div className="flex place-content-center justify-around items-center">
             <div className="flex flex-col text-left w-6/12">
               <div className="text-5xl py-8 text-black font-medium space-y-2">
@@ -192,22 +192,30 @@ const fin888 = () => {
                 CREATION DU COMPTE
               </h1>
               <p>
-                Pour la création d'un compte auto-tradegold, il vous faut un IB
-                de référence.
+                Pour la création d'un compte samtradefx, il vous faut un compte
+                sur ovniscalp.
+              </p>
+              <p>
+                <span className="text-[#DD1C50] font-semibold">Email</span>:
+                Votre email personnel
               </p>
               <p>
                 <span className="text-[#DD1C50] font-semibold">
-                  IB Refference
+                  Create Username
                 </span>
-                : IB75214800
+                : Un nom d'utilisateur unique
               </p>
               <p>
-                Après cela, cliquez sur "Next'" et Veuillez aussi remplire les
+                <span className="text-[#DD1C50] font-semibold">Password</span>:
+                Un mot de passe complexe
+              </p>
+              <p>
+                Après cela, cliquez sur 'Next' et Veuillez aussi remplire les
                 infos de base pour la création d'un compte.
               </p>
               <div className="pt-4">
                 <a
-                  href="https://pantheratrade.live/register?r=IB75214800"
+                  href="https://member.ovniscalp-official.com/register?r=maximegheraille"
                   target="_blank"
                   rel="noopener"
                   className="rounded-lg px-4 py-2 bg-[#DD1C50] text-white"
@@ -232,64 +240,84 @@ const fin888 = () => {
                 VALIDATION DU COMPTE
               </h1>
               <p>
-                Après la création de votre compte, il va falloir le&nbsp;
-                <span className="text-[#DD1C50] font-semibold">valider</span>
-                &nbsp; Via le bouton prévu sur la page après s'être connecté.
+                Après la création de votre compte, il va falloir compléter les
+                infos requises pour valider la création du compte.
               </p>
               <p>
                 <span className="text-[#DD1C50] font-semibold">Bank Name</span>:
                 Sélectionnez "Other Bank'" sauve si vous habitez en Indonésie.
               </p>
               <p>
-                <span className="text-[#DD1C50] font-semibold">
-                  Bank Account Name
-                </span>
-                : Le nom de votre banque
+                <span className="text-[#DD1C50] font-semibold">Title</span>:
+                Votre titre
+              </p>
+              <p>
+                <span className="text-[#DD1C50] font-semibold">Firstname</span>:
+                Votre prénom
+              </p>
+              <p>
+                <span className="text-[#DD1C50] font-semibold">Lastname</span>:
+                Votre Nom de famille
+              </p>
+              <p>
+                <span className="text-[#DD1C50] font-semibold">Fullname</span>:
+                Votre prénom et nom
               </p>
               <p>
                 <span className="text-[#DD1C50] font-semibold">
-                  Bank Account Number
+                  Date of Birth
                 </span>
-                : Votre numéro de compte bancaire
+                : Sélectionez votre date de naissance
               </p>
               <p>
                 <span className="text-[#DD1C50] font-semibold">
-                  Crypto Currency
+                  Birth Place
                 </span>
-                : Sélectionnez bien&nbsp;
-                <span className="text-black font-bold">Enabled</span>
+                : Votre Pays de votre naissance
+              </p>
+              <p>
+                <span className="text-[#DD1C50] font-semibold">Gender</span>:
+                Votre sexe
+              </p>
+              <p>
+                <span className="text-[#DD1C50] font-semibold">Area</span>:
+                Votre pays de résidence
               </p>
               <p>
                 <span className="text-[#DD1C50] font-semibold">
-                  Crypto Account
+                  Phone Number
                 </span>
-                : Sélectionez USDT. USDT est une crypto stable sans fluctuation
-                adossé au dollar.
+                : Votre numéro de GSM (sans le préfixe)
               </p>
               <p>
                 <span className="text-[#DD1C50] font-semibold">
-                  Crypto Address
+                  ID Card Type
                 </span>
-                : Une addresse crypto USDT (avec le reseau Ethereum ERC-20)
-              </p>
-              <p>
-                <span className="text-[#DD1C50] font-semibold">ID Card</span>:
-                Télécharger une photo de votre carte d'identité sur&nbsp;
-                <a rel="noopener" href="https://imglink.io/">
-                  imglink.io&nbsp;
-                </a>
-                et poster l'URL dans le champ
+                : Sélectionnez ce que vous préférez ID CARD ou PASSPORT
               </p>
               <p>
                 <span className="text-[#DD1C50] font-semibold">
-                  Selfie with ID Card
+                  ID Card Number
                 </span>
-                : Télécharger une photo de votre visage avec votre carte
-                d'identité visible a coté sur&nbsp;
-                <a rel="noopener" href="https://imglink.io/">
-                  imglink.io&nbsp;
-                </a>
-                et poster l'URL dans le champ
+                : Le numéro de votre carte d'identité ou passeport dependant de
+                la sélection dans 'ID Card Type'
+              </p>
+              <p>
+                <span className="text-[#DD1C50] font-semibold">Country</span>:
+                Votre pays de résidence
+              </p>
+              <p>
+                <span className="text-[#DD1C50] font-semibold">
+                  Postal Code
+                </span>
+                : Le code postal de votre résidence
+              </p>
+              <p>
+                <span className="text-[#DD1C50] font-semibold">Address</span>:
+                Votre address complete
+              </p>
+              <p>
+                Cliquez sur 'Proceed' une fois toutes infos requises remplies
               </p>
             </div>
             <div className="">
