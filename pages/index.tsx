@@ -49,17 +49,22 @@ const Home: NextPage = () => {
 
   const aide: { title: string; description: string; icon: any }[] = [
     {
-      title: "Compte",
+      title: "1. Choissir votre robot",
+      description: "Un retrait de capital de votre compte",
+      icon: cashout,
+    },
+    {
+      title: "2. Créer votre compte",
       description: "La création d'un compte sur chaque robots",
       icon: compte,
     },
     {
-      title: "Depots",
+      title: "3. Deposer votre capital",
       description: "Un depot de capital sur votre compte pour votre robots",
       icon: deposit,
     },
     {
-      title: "Retraits",
+      title: "4. Retirer vos gains",
       description: "Un retrait de capital de votre compte",
       icon: cashout,
     },
@@ -67,9 +72,9 @@ const Home: NextPage = () => {
   return (
     <div className="lg:p-0 lg:pt-8 min-h-screen">
       <section className="p-4 flex-col-reverse flex bg-opacity-10 lg:flex-row max-w-7xl mx-auto">
-        <div className=" lg:w-3/6 flex place-items-center flex-col max-w-7xl mx-auto lg:px-8">
+        <div className=" lg:w-3/6 flex place-items-center flex-col max-w-7xl mx-auto lg:px-6">
           <p className="font-semibold text-4xl text-black mb-5 mt-10 text-left w-full">
-            Robots de Trading
+            Qu'est-ce qu'un Robot de Trading ?
           </p>
           <div className="font-normal text-base text-gray-500 space-y-4">
             <p className="">
@@ -81,7 +86,7 @@ const Home: NextPage = () => {
             <p className="">
               Le gros avantage (pour son utilisateur) est qu'il ne faut donc
               aucune connaissance en trading pour l'utiliser et générer ainsi
-              très facilement des
+              très facilement
               <span className="text-[#DF9622]">
                 &nbsp;des revenus passifs&nbsp;
               </span>
@@ -95,9 +100,12 @@ const Home: NextPage = () => {
             <p>
               Les ordres (de type « scalping ») passés par ces robots ne durent
               que quelques minutes et offrent un rendement moyen
-              particulièrement élevé. Nous avons testé différents robots de ce
-              type pendant plusieurs mois et ce site propose ceux qui ont le
-              plus retenu notre attention.
+              particulièrement élevé.
+            </p>
+            <p>
+              Nous avons testé différents robots de ce type pendant plusieurs
+              mois et ce site propose ceux qui ont le plus retenu notre
+              attention.
             </p>
             <div className="pt-4">
               <a
@@ -113,9 +121,9 @@ const Home: NextPage = () => {
           <Image src={ai2} className="" />
         </div>
       </section>
-      <section className="p-4 mt-5 lg:mt-20 py-10 max-w-7xl mx-auto">
+      <section className="p-4 lg:p-0 mt-5 lg:mt-20 py-10 max-w-7xl mx-auto">
         <h1 className="text-center text-4xl py-8 text-black font-bold">
-          LES AVANTAGES ?
+          Quels sont ses avantages ?
         </h1>
         <div className="flex flex-col space-y-3 lg:space-y-0 lg:flex-row lg:space-x-3 place-content-between pt-4">
           {cards.map((card: Card, index: number) => (
@@ -138,9 +146,38 @@ const Home: NextPage = () => {
           ))}
         </div>
       </section>
-      <section className="p-4 py-5 lg:py-10" id="robots">
+      <section className="p-4 lg:p-0 bg-cover bg-center bg-no-repeat bg-hero-pattern4 mt-20 py-10">
+        <div className="py-8 space-y-4">
+          <h1 className="text-center text-4xl text-white font-bold">
+            Comment pouvons-nous vous aider ?
+          </h1>
+          <p className="text-center text-gray-300 lg:text-gray-300">
+            Ce site vous explique en details toutes les étapes importantes.
+          </p>
+        </div>
+        <div className="max-w-7xl mx-auto flex flex-col items-center lg:flex-row space-y-3 lg:space-y-0 lg:space-x-3 place-content-between pt-4 pb-20">
+          {aide.map((card: Card, index: number) => (
+            <div
+              key={index}
+              className="w-80 h-[15rem] lg:w-80 space-y-2 bg-[#4B5563] rounded-lg text-white text-center p-4"
+            >
+              <div
+                className={`w-32 h-36 flex place-content-center align-middle text-center items-center mx-auto`}
+              >
+                {/* <Image src={card.icon} className="" /> */}
+                <p>{index}</p>
+              </div>
+              <div className="flex-grow space-y-2">
+                <p className="text-2xl font-bold">{card.title}</p>
+                {/* <p className="text-gray-300">{card.description}</p> */}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+      <section className="p-4 lg:p-0 py-5 lg:py-10" id="robots">
         <h1 className="text-center text-4xl py-8 text-black font-bold">
-          LES ROBOTS
+          Choisissez votre Robot
         </h1>
         <div className="text-left lg:text-center text-lg text-gray-500 pb-8 space-y-2 font-semibold">
           <p className="">
@@ -182,37 +219,7 @@ const Home: NextPage = () => {
           ))}
         </div>
       </section>
-      <section className="p-4 bg-cover bg-center bg-no-repeat bg-hero-pattern4 mt-20 py-10">
-        <div className="py-8 space-y-4">
-          <h1 className="text-center text-4xl text-white font-bold">
-            NOUS VOUS AIDONS
-          </h1>
-          <p className="text-center text-gray-300 lg:text-gray-400">
-            Nous vous montrons comment faire toutes les étapes d'un robot, ceci
-            vous permettra de savoir tout faire et de n'etre jamais bloqué
-          </p>
-        </div>
-        <div className="flex flex-col items-center lg:flex-row space-y-3 lg:space-y-0 lg:space-x-3 place-content-center pt-4 pb-20">
-          {aide.map((card: Card, index: number) => (
-            <div
-              key={index}
-              //  className="shadow-xl justify-around rounded-full p-10 text-center flex flex-col border border-black w-72 h-72"
-              className="w-80 lg:w-96 space-y-2 bg-[#4B5563] rounded-lg text-white text-center p-4"
-            >
-              <div
-                className={`w-32 h-36 flex place-content-center align-middle text-center items-center mx-auto`}
-              >
-                <Image src={card.icon} className="" />
-              </div>
-              <div className="flex-grow space-y-2">
-                <p className="text-2xl font-bold">{card.title}</p>
-                <p className="text-gray-300">{card.description}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-      <section className="p-4 bg-gray-600 pb-4 pt-10">
+      <section className="p-4 bg-gray-600 pt-10 pb-6">
         <div className="flex-col lg:flex-row space-y-3 lg:space-y-0 lg:space-x-7 max-w-7xl mx-auto flex place-content-center items-center">
           <div className="">
             <div
