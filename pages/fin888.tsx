@@ -316,6 +316,7 @@ const fin888 = () => {
                 <span className="text-[#DD1C50] font-semibold">Address</span>:
                 Votre address complete
               </p>
+
               <p>
                 Cliquez sur 'Proceed' une fois toutes infos requises remplies
               </p>
