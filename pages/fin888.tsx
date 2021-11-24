@@ -3,7 +3,6 @@ import deposit from "../public/deposit.svg";
 import cashout from "../public/cashout.svg";
 import computer from "../public/computer-svgrepo-com.svg";
 import Image from "next/image";
-import ai5 from "../public/BotsDeTrading-3.png";
 import part1 from "../public/fin888/part1.png";
 import part2 from "../public/fin888/part2.png";
 import part3 from "../public/autotradegold/part3.png";

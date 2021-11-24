@@ -8,7 +8,9 @@ import cash from "../public/cash-svgrepo-com.svg";
 import compte from "../public/online-shop-svgrepo-com.svg";
 import deposit from "../public/deposit.svg";
 import cashout from "../public/cashout.svg";
-import warning from "../public/duotone-user-warning-svgrepo-com.svg";
+import warning from "../public/warning.svg";
+import checked from "../public/checked.svg";
+
 import Link from "next/link";
 import {
   NavChild,
@@ -49,24 +51,24 @@ const Home: NextPage = () => {
 
   const aide: { title: string; description: string; icon: any }[] = [
     {
-      title: "1. Choissir votre robot",
+      title: "Choisir votre robot",
       description: "Un retrait de capital de votre compte",
-      icon: cashout,
+      icon: checked,
     },
     {
-      title: "2. Créer votre compte",
+      title: "Créer votre compte",
       description: "La création d'un compte sur chaque robots",
-      icon: compte,
+      icon: checked,
     },
     {
-      title: "3. Deposer votre capital",
+      title: "Deposer votre capital",
       description: "Un depot de capital sur votre compte pour votre robots",
-      icon: deposit,
+      icon: checked,
     },
     {
-      title: "4. Retirer vos gains",
+      title: "Retirer vos gains",
       description: "Un retrait de capital de votre compte",
-      icon: cashout,
+      icon: checked,
     },
   ];
   return (
@@ -162,13 +164,15 @@ const Home: NextPage = () => {
               className="w-80 h-[15rem] lg:w-80 space-y-2 bg-[#4B5563] rounded-lg text-white text-center p-4"
             >
               <div
-                className={`w-32 h-36 flex place-content-center align-middle text-center items-center mx-auto`}
+                className={`w-24 h-36 flex place-content-center align-middle text-center items-center mx-auto`}
               >
-                {/* <Image src={card.icon} className="" /> */}
-                <p>{index}</p>
+                <Image src={card.icon} className="" />
               </div>
               <div className="flex-grow space-y-2">
-                <p className="text-2xl font-bold">{card.title}</p>
+                <p className="text-2xl font-bold">
+                  <span className="text-lg">{index}.&nbsp;</span>
+                  {card.title}
+                </p>
                 {/* <p className="text-gray-300">{card.description}</p> */}
               </div>
             </div>
