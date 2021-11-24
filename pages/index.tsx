@@ -232,14 +232,22 @@ const Home: NextPage = () => {
               <Image src={warning} className="" />
             </div>
           </div>
-          <p className="text-center text-white">
-            Nous avons pour objectif de vous offrir des tutoriels d'inscription,
-            de dépôts et retraits de capital pour différents robots de trading.
-            Nous ne sommes pas un conseiller financier. Il vous est fort
-            recommandé de faire vos propres vérifications avant d'investir sur
-            un des robots. Le site robot-trading.club ne serra en aucun cas
-            responsabilité pour toutes pertes liées à l'investissement.
-          </p>
+          <div className="text-center text-white">
+            <p className="">
+              La trading reste un investissement à risque et les résultats
+              passés ne préjugent pas des resultats futurs.
+            </p>
+            <p className="">
+              La vocation de ce site est simplement de vous fournir des
+              tutoriels complets mais en aucun cas de vous donner un conseil
+              financier ou vous inciter à souscrire à ces solutions.
+            </p>
+            <p className="">
+              Le visiteur de ce site est seul responsable de l'utilisation qu'il
+              fera des informations communiquées sur ce site et des risques liés
+              à l'utilisation de ces robots de trading.
+            </p>
+          </div>
         </div>
       </section>
     </div>
