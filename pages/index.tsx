@@ -170,7 +170,7 @@ const Home: NextPage = () => {
               </div>
               <div className="flex-grow space-y-2">
                 <p className="text-2xl font-bold">
-                  <span className="text-lg">{index}.&nbsp;</span>
+                  <span className="text-lg">{index + 1}.&nbsp;</span>
                   {card.title}
                 </p>
                 {/* <p className="text-gray-300">{card.description}</p> */}
