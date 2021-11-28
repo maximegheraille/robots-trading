@@ -51,9 +51,9 @@ const autotradegold = () => {
     },
   ];
   const infos = [
-    { title: "Lincence niveau 1 pour le robots", prix: "110$" },
-    { title: "Capital pour le trading", prix: "+-112$" },
-    { title: "Cout total de l'investissement", prix: "+-250$" },
+    { title: "Coût de la licence la moins chère", prix: "112$" },
+    { title: "Capital minimum", prix: "100$" },
+    { title: "Cout total de l'investissement minimum", prix: "212$" },
     { title: "Rendement moyen par mois", prix: "+-15%" },
   ];
   const license = [
@@ -76,17 +76,28 @@ const autotradegold = () => {
                 <h1 className="">AutoTrade Gold 5.0</h1>
                 <h1 className="text-[#F5CD44]">Trading Robot</h1>
               </div>
-              <div className="lg:pr-24 font-normal text-gray-500">
+              <div className="lg:pr-24 font-normal text-gray-500 space-y-2">
                 <p>
                   Autotrade gold 5.0 est un robot trading axé sur l’Or. Il a été
                   dévoloppé par la société PT. SDFI, une compagnie Indonésienne
-                  situé à Jakarta. Le robot vise des profits de 0.5% à 1.5% par
-                  jour de votre capital total. Le robot trade en mode .
-                  <span className="italic">scalpin</span>. <br /> <br /> Un seul
-                  trade à la fois serra excuté et chaque trade ne peut pas perde
-                  plus de 3% de votre capital, après cela il sera fermé
-                  automatiquement.
+                  situé à Jakarta.
                 </p>
+                <p>
+                  Le robot vise des profits de 0.5% à 1.5% par jour de votre
+                  capital total et trade en mode
+                  <span className="italic">&nbsp;scalpin</span>.
+                </p>
+                <p>
+                  Le robot ne lancera qu'un seule trade par jour, sauf si
+                  celui-ci est perdant. Dans ce cas il lancera un second trade
+                  pour essayer de récupérer la perte du premier.
+                </p>
+
+                <p>
+                  Un trade ne pourra pas perde plus de 3% de votre capital.
+                  (stop-loss à 3%)
+                </p>
+                <p></p>
               </div>
             </div>
             <div className="w-6/12 lg:w-4/12">
@@ -97,7 +108,7 @@ const autotradegold = () => {
       </div>
       <section>
         <h1 className="text-center text-3xl py-8 text-black font-bold font">
-          INFOS PRATIQUES
+          LE MINIMUM REQUIS POUR DEBUTER
         </h1>
         <div
           className="flex flex-wrap lg:flex-nowrap space-y-4 lg:space-y-0
@@ -117,7 +128,7 @@ const autotradegold = () => {
         <div className="">
           <div className="">
             <h1 className="text-center text-4xl py-8 text-black font-bold">
-              LES LICENCES
+              LES DIFFERENTS LICENCES DISPONIBLES
             </h1>
             <div className="flex flex-wrap lg:flex-nowrap space-y-4 lg:space-y-0 place-content-evenly max-w-7xl mx-auto pb-4 item">
               {license.map(
@@ -186,18 +197,19 @@ const autotradegold = () => {
                 CREATION DU COMPTE
               </h1>
               <p>
-                Pour la création d'un compte auto-tradegold, il vous faut un IB
-                de référence.
+                Pour la création d'un compte Auto-tradegold, il vous faut
+                obligatoirement un "IB référence" (parrain).
               </p>
               <p>
+                Vous pouvez donc utiliser notre
                 <span className="text-[#DF9622] font-semibold">
-                  IB Refference
+                  &nbsp;"IB Refference"
                 </span>
                 : IB75214800
               </p>
               <p>
-                Après cela, cliquez sur "Next'" et Veuillez aussi remplire les
-                infos de base pour la création d'un compte.
+                Cliquez ensuite sur le bouton "Next" et completer les infos de
+                base demandées.
               </p>
               <div className="pt-4">
                 <a
@@ -206,9 +218,17 @@ const autotradegold = () => {
                   rel="noopener"
                   className="rounded-lg px-4 py-2 bg-[#DF9622] text-white"
                 >
-                  Commencer maintenant
+                  URL d'inscription
                 </a>
               </div>
+
+              <p className="pt-4">
+                Après la création de votre compte, il va falloir le
+                <span className="text-[#DF9622] font-semibold">
+                  &nbsp;valider&nbsp;
+                </span>
+                via le bouton affiché sur la page d'accueil.
+              </p>
             </div>
             <div className="">
               <Image src={part1} className="rounded-lg" />
@@ -225,11 +245,7 @@ const autotradegold = () => {
               <h1 className="text-xl text-black font-bold pb-4">
                 VALIDATION DU COMPTE
               </h1>
-              <p>
-                Après la création de votre compte, il va falloir le&nbsp;
-                <span className="text-[#DF9622] font-semibold">valider</span>
-                &nbsp; Via le bouton prévu sur la page après s'être connecté.
-              </p>
+
               <p>
                 <span className="text-[#DF9622] font-semibold">Bank Name</span>:
                 Sélectionnez "Other Bank'" sauve si vous habitez en Indonésie.
