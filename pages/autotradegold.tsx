@@ -189,7 +189,7 @@ const autotradegold = () => {
         </h1>
         <div className="max-w-7xl mx-auto flex flex-col">
           <p className="font-medium rounded-full text-center text-white bg-gray-500 w-20">
-            etape 1
+            Etape 1
           </p>
           <div className="flex place-content-between pt-5 space-x-10 font-normal text-gray-500">
             <div className="text-lg space-y-3 flex flex-col w-10/12">
@@ -238,7 +238,7 @@ const autotradegold = () => {
 
         <div className="max-w-7xl mx-auto flex flex-col pt-20">
           <p className="font-medium rounded-full text-center text-white bg-gray-500 w-20">
-            etape 2
+            Etape 2
           </p>
           <div className="flex place-content-between pt-5 space-x-10 font-normal text-gray-500">
             <div className="text-lg space-y-3 flex flex-col w-10/12">
@@ -248,39 +248,40 @@ const autotradegold = () => {
 
               <p>
                 <span className="text-[#DF9622] font-semibold">Bank Name</span>:
-                Sélectionnez "Other Bank'" sauve si vous habitez en Indonésie.
+                Sélectionnez "Other Bank" (sauf si vous habitez en Indonésie).
               </p>
               <p>
                 <span className="text-[#DF9622] font-semibold">
                   Bank Account Name
                 </span>
-                : Le nom de votre banque
+                : Indiquez le nom de votre banque.
               </p>
               <p>
                 <span className="text-[#DF9622] font-semibold">
                   Bank Account Number
                 </span>
-                : Votre numéro de compte bancaire
+                : Indiquez votre numéro de compte bancaire.
               </p>
               <p>
                 <span className="text-[#DF9622] font-semibold">
                   Crypto Currency
                 </span>
-                : Sélectionnez bien&nbsp;
-                <span className="text-black font-bold">Enabled</span>
+                : Sélectionnez&nbsp;
+                <span className="text-black font-bold">"Enabled"</span>
               </p>
               <p>
                 <span className="text-[#DF9622] font-semibold">
                   Crypto Account
                 </span>
-                : Sélectionez USDT. USDT est une crypto stable sans fluctuation
-                adossé au dollar.
+                : Sélectionnez USDT (USDT est une crypto stable sans fluctuation
+                car adossée au dollar).
               </p>
               <p>
                 <span className="text-[#DF9622] font-semibold">
                   Crypto Address
                 </span>
-                : Une addresse crypto USDT (avec le reseau Ethereum ERC-20)
+                : Entrez votre adresse crypto USDT (avec le réseau Ethereum
+                ERC-20). C'est sur ce Wallet que seront envoyés vos retraits
               </p>
               <p>
                 <span className="text-[#DF9622] font-semibold">ID Card</span>:
@@ -294,12 +295,11 @@ const autotradegold = () => {
                 <span className="text-[#DF9622] font-semibold">
                   Selfie with ID Card
                 </span>
-                : Télécharger une photo de votre visage avec votre carte
-                d'identité visible a coté sur&nbsp;
+                : Téléchargez une photo de votre carte d'identité sur
                 <a rel="noopener" href="https://imglink.io/">
-                  imglink.io&nbsp;
+                  &nbsp;imglink.io&nbsp;
                 </a>
-                et poster l'URL dans le champ
+                (en cliquant sur le lien proposé) et postez l'URL dans le champ.
               </p>
             </div>
             <div className="">
@@ -310,7 +310,7 @@ const autotradegold = () => {
 
         <div className="max-w-7xl mx-auto flex flex-col pt-20">
           <p className="font-medium rounded-full text-center text-white bg-gray-500 w-20">
-            etape 3
+            Etape 3
           </p>
           <div className="flex place-content-between pt-5 space-x-10 font-normal text-gray-500">
             <div className="text-lg space-y-3 flex flex-col w-7/12">
@@ -318,18 +318,17 @@ const autotradegold = () => {
                 OUVERTURE DU COMPTE TRADING
               </h1>
               <p>
-                Pendats que l'équipe valide votre compte vous pouvez déjà
-                activer votre compte trading via
+                Pendant que l'équipe de Panthera valide votre compte vous pouvez
+                déjà activer votre compte trading via
                 <a
                   href="https://pantheratrade.live/user/open_live_account"
                   target="_blank"
                   rel="noopener"
                 >
                   <span className="text-[#DF9622]">
-                    &nbsp;Trading Account &gt; Open Live Account
+                    &nbsp;Trading Account &gt; Open Live Account.
                   </span>
                 </a>
-                .
               </p>
               <p>
                 <span className="text-[#DF9622] font-semibold">Broker</span>:
@@ -355,8 +354,8 @@ const autotradegold = () => {
                 <span className="text-[#DF9622] font-semibold">
                   Create MT4 Password&nbsp;
                 </span>
-                : Vous pouvez choissier, mais je conseille le même mot de passe
-                que votre login sur panthera.live
+                : Vous pouvez choisir votre mot de passe à utiliser pour le
+                compte de trading.
               </p>
             </div>
             <div className="">
@@ -366,13 +365,14 @@ const autotradegold = () => {
         </div>
         <div className="flex flex-col pt-20">
           <p className="font-medium rounded-full text-center text-white bg-gray-500 w-20">
-            etape 4
+            Etape 4
           </p>
           <div className="flex place-content-between pt-5 space-x-10 font-normal text-gray-500">
             <div className="text-lg space-y-3 flex flex-col w-6/12">
               <h1 className="text-xl text-black font-bold pb-4">
-                INSCRIPTION <span className="text-[#DF9622]">PANSAKA</span> POUR
-                GERER VOTRE LICENSE AUTO TRADE GOLD 5.0
+                INSCRIPTION SUR
+                <span className="text-[#DF9622]">&nbsp;PANSAKA&nbsp;</span>POUR
+                GERER VOTRE LICENCE AUTO TRADE GOLD 5.0
               </h1>
               <p>
                 <span className="text-[#DF9622] font-semibold">Refferal</span>:
@@ -382,14 +382,14 @@ const autotradegold = () => {
                 <span className="text-[#DF9622] font-semibold">
                   Select Crypto
                 </span>
-                : USDT
+                : USDT (ou la crypto de votre choix)
               </p>
               <p>
                 <span className="text-[#DF9622] font-semibold">
                   Crypto Address
                 </span>
-                : Addresse de dépôt USDT (par example: binance, crypto.com,
-                coinbase)
+                : Introduisez l'adresse de votre wallet USDT (ou celui de la
+                crypto de votre choix)
               </p>
               <div className="pt-4">
                 <a
@@ -398,7 +398,7 @@ const autotradegold = () => {
                   rel="noopener"
                   className="rounded-lg px-4 py-2 bg-[#DF9622] text-white"
                 >
-                  S'inscrire
+                  URL D'INSCRIPTION
                 </a>
               </div>
             </div>
@@ -410,7 +410,7 @@ const autotradegold = () => {
 
         <div className="flex flex-col pt-20">
           <p className="font-medium rounded-full text-center text-white bg-gray-500 w-20">
-            etape 5
+            Etape 5
           </p>
           <div className="flex place-content-between pt-5 space-x-10 font-normal text-gray-500">
             <div className="text-lg space-y-3 flex flex-col w-9/12">
@@ -418,7 +418,8 @@ const autotradegold = () => {
                 ACHETER VOTRE LICENSE
               </h1>
               <p>
-                Pour acheter votre license, selectionez dans le menu
+                Pour acheter votre licence (sur base du capital maximum que vous
+                voulez déposer), sélectionnez dans le menu
                 <a
                   href="https://pansaka.co.id/panel/upgrade-special.php"
                   target="_blank"
@@ -431,32 +432,9 @@ const autotradegold = () => {
                 .
               </p>
               <p>
-                <span className="text-[#DF9622] font-semibold">Refferal</span>:
-                10004621
+                Pour sélection votre license mettez le bouton de la license sur
+                "on" et cliquer sur "checkout"
               </p>
-              <p>
-                <span className="text-[#DF9622] font-semibold">
-                  Select Crypto
-                </span>
-                : USDT
-              </p>
-              <p>
-                <span className="text-[#DF9622] font-semibold">
-                  Crypto Address
-                </span>
-                : Addresse de dépôt USDT (par example: binance, crypto.com,
-                coinbase)
-              </p>
-              <div className="pt-4">
-                <a
-                  href="https://pansaka.co.id/?r=10004621"
-                  target="_blank"
-                  rel="noopener"
-                  className="rounded-lg px-4 py-2 bg-[#DF9622] text-white"
-                >
-                  S'inscrire
-                </a>
-              </div>
             </div>
             <div className="">
               <Image src={part5} className="rounded-lg" />
@@ -465,7 +443,7 @@ const autotradegold = () => {
         </div>
         <div className="flex flex-col pt-20">
           <p className="font-medium rounded-full text-center text-white bg-gray-500 w-20">
-            etape 6
+            Etape 6
           </p>
           <div className="flex place-content-between pt-5 space-x-10 font-normal text-gray-500">
             <div className="text-lg space-y-3 flex flex-col w-7/12">
@@ -475,13 +453,16 @@ const autotradegold = () => {
               <ul className="list-decimal list-inside space-y-4">
                 <li>
                   <span className="text-[#DF9622] font-semibold">
-                    Pilih Cara Pembayaran:
+                    Cliquez sur le bouton Pilih Cara Pembayaran et sélectionez
                   </span>
-                  Sélectionez&nbsp;
-                  <span className="italic">Crypto Coin Currency</span>
+
+                  <span className="italic">
+                    &nbsp;Crypto Coin Currency&nbsp;
+                  </span>
                 </li>
                 <li>
-                  Sélectionez <span className="italic"> Proses Checkout</span>
+                  Apres cella sélectionez
+                  <span className="italic">&nbsp;Proses Checkout&nbsp;</span>
                 </li>
               </ul>
             </div>
@@ -492,7 +473,7 @@ const autotradegold = () => {
         </div>
         <div className="flex flex-col pt-20">
           <p className="font-medium rounded-full text-center text-white bg-gray-500 w-20">
-            etape 7
+            Etape 7
           </p>
           <div className="flex place-content-between pt-5 space-x-10 font-normal text-gray-500">
             <div className="text-lg space-y-3 flex flex-col w-7/12">
@@ -514,21 +495,23 @@ const autotradegold = () => {
         </div>
         <div className="flex flex-col pt-20">
           <p className="font-medium rounded-full text-center text-white bg-gray-500 w-20">
-            etape 8
+            Etape 8
           </p>
           <div className="flex place-content-between pt-5 space-x-10 font-normal text-gray-500">
             <div className="text-lg space-y-3 flex flex-col w-11/12">
               <h1 className="text-xl text-black font-bold pb-4">
-                REGLEMENT DU PAIEMENT
+                GENERER LES INFOS DU PAIEMENT
               </h1>
 
               <p>
                 <span className="italic text-[#DF9622] font-bold">
-                  Select Coin:
+                  Select Coin:&nbsp;
                 </span>
-                &nbsp; Sélectionez{" "}
-                <span className="italic">Litecoin (LTC)</span> pour le faible
-                coûts de transaction.
+                Sélectionez
+                <span className="italic">
+                  &nbsp; Litecoin (LTC)&nbsp;{" "}
+                </span>{" "}
+                pour le faible coûts de transaction.
               </p>
               <p>
                 Après avoir rempli les infos nécessaires, veuillez cliquer sur
@@ -542,7 +525,7 @@ const autotradegold = () => {
         </div>
         <div className="flex flex-col pt-20">
           <p className="font-medium rounded-full text-center text-white bg-gray-500 w-20">
-            etape 9
+            Etape 9
           </p>
           <div className="flex place-content-between pt-5 space-x-10 font-normal text-gray-500">
             <div className="text-lg space-y-3 flex flex-col w-full">
@@ -551,7 +534,7 @@ const autotradegold = () => {
               </h1>
 
               <p>
-                Aller sur
+                Aller sur votre Exchange
                 <a
                   href="https://www.binance.com/fr/my/wallet/account/main/withdrawal/crypto/LTC"
                   target="_blank"
@@ -559,40 +542,46 @@ const autotradegold = () => {
                 >
                   &nbsp;Binance&nbsp;
                 </a>
-                ou crypto.com et faites un retraits/withdraw.
+                ou{" "}
+                <a href="https://www.crypto.com" target="_blank" rel="noopener">
+                  &nbsp;crypto.com&nbsp;
+                </a>{" "}
+                et faites un retrait/withdraw.
               </p>
               <p>
                 <span className="text-[#DF9622] font-semibold">
-                  Select Coin:
+                  Select Coin:&nbsp;
                 </span>
-                &nbsp; Sélectionez bien{" "}
-                <span className="italic">Litecoin (LTC)</span>
+                Sélectionez bien
+                <span className="italic">&nbsp;Litecoin (LTC)&nbsp;</span>
               </p>
 
               <p>
                 <span className="text-[#DF9622] font-semibold">
                   Withdraw to:
                 </span>
-                &nbsp; Indiquez bien l'address&nbsp;
-                <span className="font-bold">EXACTE</span> que vous aviez dans la
-                derniere étape apres avoir clique le bouton&nbsp;
-                <span className="italic">Complete Checkout:</span>.
+                &nbsp; Indiquez l'adresse&nbsp;
+                <span className="font-bold">EXACTE</span> (que vous aviez reçue
+                dans l'étape précédente sur le site de CoinPayments).
               </p>
               <p>
-                <span className="text-[#DF9622] font-semibold">Network:</span>
-                &nbsp; Selectionez bien{" "}
-                <span className="italic">Litecoin (LTC)</span>
+                <span className="text-[#DF9622] font-semibold">
+                  Network:&nbsp;
+                </span>
+                Selection Litecoin
+                <span className="italic">&nbsp;Litecoin (LTC)&nbsp;</span>
               </p>
               <p>
                 <span className="text-[#DF9622]">Withdraw amount:</span>&nbsp;
-                Indiquez bien le montant que montré dans l'étape d'avant.
-                Rajouter bien <span className="font-bold italic"> 0,001</span>
-                &nbsp; au prix final.
+                Il faut bien tenir compte des frais de transaction. Si vous êtes
+                sur Binance il faut par exemple prévoir{" "}
+                <span className="font-bold italic">&nbsp;0,001&nbsp;</span> LTC
+                en plus du montant demandé.
               </p>
               <p>Par example: requit 0.1428 LTC devient 0.1438 au final.</p>
               <p>
                 Un email de confirmation de paiement vous sera envoyé à l'email
-                indiqué dans l'étape d'avant.
+                indiqué dans l'étape précédente.
               </p>
             </div>
             <div className="pl-20">
@@ -603,18 +592,18 @@ const autotradegold = () => {
         </div>
         <div className="flex flex-col pt-20">
           <p className="font-medium rounded-full text-center text-white bg-gray-500 w-20">
-            etape 10
+            Etape 10
           </p>
           <div className="flex place-content-between pt-5 space-x-10 font-normal text-gray-500">
             <div className="text-lg space-y-3 flex flex-col w-8/12">
               <h1 className="text-xl text-black font-bold pb-4">
-                ASSOCIER LA LICENSE AVEC AUTO TRADE GOLD 5.0
+                ASSOCIER LA LICENCE AVEC AUTO TRADE GOLD 5.0
               </h1>
               <p>
                 Quelques minutes après le paiement vous allez recevoir un email
-                d'atg-system.com avec le&nbsp;
-                <span className="italic">Voucher Code</span> et
-                <span className="italic">Voucher ID</span>
+                d'atg-system.com contenant
+                <span className="italic">&nbsp;Voucher Code&nbsp;</span>et
+                <span className="italic">&nbsp;Voucher ID&nbsp;</span>
               </p>
               <p>
                 Aller sur
@@ -624,53 +613,46 @@ const autotradegold = () => {
                   rel="noopener"
                   className="font-bold"
                 >
-                  &nbsp;atg-system&nbsp;
+                  &nbsp;Atg-system&nbsp;
                 </a>
-                et connectez-vous avec votre votre compte créé sur
-                Pantheratrade.live
+                et connectez-vous avec votre compte créé sur Pantheratrade.live
               </p>
               <p>
                 <span className="text-[#DF9622] font-semibold">
-                  Voucher ID:
+                  Voucher ID:&nbsp;
                 </span>
-                &nbsp; indiquer le <span className="italic">Voucher ID</span>
-                &nbsp; reçu dans le mail de atg-system.com
+                Indiquer le
+                <span className="italic">&nbsp;Voucher ID&nbsp;</span>
+                reçu dans le mail de atg-system.com
               </p>
               <p>
                 <span className="text-[#DF9622] font-semibold">
-                  Voucher Code:
+                  Voucher Code:&nbsp;
                 </span>
-                &nbsp; indiquer le <span className="italic">Voucher code</span>
-                &nbsp; reçu dans le mail de atg-system.com
+                Indiquer le
+                <span className="italic">&nbsp;Voucher code&nbsp;</span>
+                reçu dans le mail de atg-system.com
               </p>
               <p>
                 <span className="text-[#DF9622] font-semibold">
-                  MT4 Account
+                  MT4 Account&nbsp;
                 </span>
-                &nbsp; Selection bien&nbsp;
-                <span className="italic">I have Trade Account.</span>
+                Sélectionnez bien
+                <span className="italic">&nbsp;I have Trade Account.</span>
               </p>
               <p>
                 <span className="text-[#DF9622] font-semibold">
-                  Select Account:
+                  Select Account:&nbsp;
                 </span>
-                &nbsp; Sélectionnez votre compte GOLD auquel vous voulez lier
-                votre licence.
+                Sélectionnez votre compte GOLD auquel vous voulez lier votre
+                licence.
               </p>
               <p>
                 Cliquer sur <span className="italic">Activate Now.</span>
               </p>
-              <p>
-                Si votre <span className="italic">Status</span> est
-                <span className="italic">&nbsp;Detached&nbsp;</span> cliquer sur
-                <span className="italic">&nbsp;Refresh&nbsp;</span> jusqu'au
-                moment au moment ou c'est&nbsp;
-                <span className="italic">Connected</span>
-              </p>
             </div>
             <div className="">
               <Image src={part10_2} className="rounded-lg" />
-              <Image src={part10} className="rounded-lg" />
             </div>
           </div>
         </div>
@@ -680,12 +662,12 @@ const autotradegold = () => {
           className="text-center text-4xl py-8 text-black font-bold"
           id="depots"
         >
-          DEPOTS DE CAPITAL
+          DEPOT DE CAPITAL
         </h1>
 
         <div className="flex flex-col pt-20">
           <p className="font-medium rounded-full text-center text-white bg-gray-500 w-20">
-            etape 1
+            Etape 1
           </p>
           <div className="flex place-content-between pt-5 space-x-10 font-normal text-gray-500">
             <div className="text-lg space-y-3 flex flex-col w-8/12">
@@ -714,14 +696,15 @@ const autotradegold = () => {
                     </span>
                   </a>
                 </span>
-                et selectionez <span className="italic">CoinPayment</span>
+                et sélectionnez
+                <span className="italic"> &nbsp;CoinPayment&nbsp;;</span>
               </p>
               <p>
                 <span className="text-[#DF9622] font-semibold">
                   Amount USD:&nbsp;
                 </span>
-                Iniquer le mon temps que vous voulez déposer sur les
-                robots.&nbsp;
+                Iniquez le montant que vous voulez déposer sur le compte de
+                trading.
               </p>
               <p>
                 <span className="text-[#DF9622] font-semibold">
@@ -733,7 +716,7 @@ const autotradegold = () => {
                 <span className="text-[#DF9622] font-semibold">
                   Select Account:&nbsp;
                 </span>
-                Sélectionez votre compte auto trade gold 5.0
+                Sélectionnez votre compte Auto Trade Gold 5.0
               </p>
             </div>
             <div className="">
@@ -743,7 +726,7 @@ const autotradegold = () => {
         </div>
         <div className="flex flex-col pt-20">
           <p className="font-medium rounded-full text-center text-white bg-gray-500 w-20">
-            etape 8
+            Etape 2
           </p>
           <div className="flex place-content-between pt-5 space-x-10 font-normal text-gray-500">
             <div className="text-lg space-y-3 flex flex-col w-10/12">
@@ -753,15 +736,16 @@ const autotradegold = () => {
 
               <p>
                 <span className="italic text-[#DF9622] font-bold">
-                  Select Coin
+                  Select Coin&nbsp;
                 </span>
-                &nbsp; Sélectionez{" "}
+                Sélectionnez
                 <span className="italic">Litecoin (LTC)</span> pour le faible
                 coût de transaction.
               </p>
               <p>
-                Après avoir rempli les infos nécessaires, veuillez cliquer sur
-                le bouton <span className="italic">Complete Checkout</span>.
+                Après avoir rempli les infos personnelles nécessaires, veuillez
+                cliquer sur le bouton
+                <span className="italic">&nbsp;Complete Checkout</span>.
               </p>
             </div>
             <div className="">
@@ -771,16 +755,16 @@ const autotradegold = () => {
         </div>
         <div className="flex flex-col pt-20">
           <p className="font-medium rounded-full text-center text-white bg-gray-500 w-20">
-            etape 9
+            Etape 3
           </p>
           <div className="flex place-content-between pt-5 space-x-10 font-normal text-gray-500">
             <div className="text-lg space-y-3 flex flex-col w-12/12">
               <h1 className="text-xl text-black font-bold pb-4">
-                ENOVYER LA CRYPTO POUR FINALISER LE PAIEMENT
+                ENVOYER LA CRYPTO POUR FINALISER LE PAIEMENT
               </h1>
 
               <p>
-                Aller sur
+                Aller sur votre Exchange
                 <a
                   href="https://www.binance.com/fr/my/wallet/account/main/withdrawal/crypto/LTC"
                   target="_blank"
@@ -788,14 +772,22 @@ const autotradegold = () => {
                 >
                   &nbsp;Binance&nbsp;
                 </a>
-                ou crypto.com et faites un retraits/withdraw.
+                ou{" "}
+                <a
+                  href="https://www.crypto.com.com/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  &nbsp;Binance&nbsp;
+                </a>
+                ) et faites un retrait/withdraw.
               </p>
               <p>
                 <span className="text-[#DF9622] font-semibold">
-                  Select Coin:
+                  Select Coin:&nbsp;
                 </span>
-                &nbsp; Selectionez bien{" "}
-                <span className="italic">Litecoin (LTC)</span>
+                Sélectionnez
+                <span className="italic">&nbsp;Litecoin (LTC)</span>
               </p>
 
               <p>
@@ -809,31 +801,44 @@ const autotradegold = () => {
               </p>
               <p>
                 <span className="text-[#DF9622] font-semibold">Network:</span>
-                &nbsp; Sélectionez bien{" "}
-                <span className="italic">Litecoin (LTC)</span>
+                Sélectionez
+                <span className="italic">&nbsp;Litecoin (LTC)</span>
               </p>
               <p>
                 <span className="text-[#DF9622] font-semibold">
-                  Withdraw amount:
+                  Withdraw amount:&nbsp;
                 </span>
-                &nbsp; Indiquez bien le montant que montré dans l'étape d'avant.
-                Rajouter bien&nbsp;
-                <span className="font-bold italic"> 0,001</span>
-                &nbsp;au prix final.
+                Indiquez le montant exigé par CoinPayments en oubliant pas de
+                tenir compte des frais (
+                <span className="font-bold italic">&nbsp;0,001&nbsp;</span>à
+                ajouter au prix final.
               </p>
               <p>Par example: requit 0.1428 LTC devient 0.1438 au final.</p>
               <p>
-                Un email de confirmation de paiement vous sera envoyé à l'email
-                indiqué dans l'étape d'avant.
+                Une fois la transaction exécutée, vous recevez un email de
+                confirmation et l'argent sera disponible sur votre compte de
+                Trading.
               </p>
               <p>
-                Une fois la transaction fini, vous recevez un email de
-                confirmation et l'argent serra sur votre robot.
+                Aprés votre confirmation reçu, aller sur
+                <a
+                  className="text-[#DF9622] font-semibold"
+                  href="https://atg-system.com/user/dashboard"
+                  target="_blank"
+                >
+                  &nbsp;atg-system.&nbsp;
+                </a>
+                Si votre <span className="italic">Status</span> est
+                <span className="italic">&nbsp;Detached&nbsp;</span>cliquer sur
+                <span className="italic">&nbsp;Refresh&nbsp;</span>jusqu'au
+                moment au moment ou c'est
+                <span className="italic">&nbsp;Connected</span>
               </p>
             </div>
             <div className="">
               <Image src={part9} className="rounded-lg" />
               <Image src={part9_2} className="rounded-lg" />
+              <Image src={part10} className="rounded-lg" />
             </div>
           </div>
         </div>
@@ -852,11 +857,12 @@ const autotradegold = () => {
                 RETRAITS DE VOS GAINS / CAPITAL
               </h1>
               <p>
-                Un retrait n'est possible que dans la devise que vous avez
-                utilisée pour faire votre dépôt initial.
+                Un retrait n'est possible que sur le wallet crypto défini pour
+                votre profil.
               </p>
               <p>
-                Vous pouvez aller vérifier sur votre{" "}
+                Vous pouvez aller vérifier votre adresse par défaut dans la
+                partie
                 <a
                   href="https://pantheratrade.live/user/edit-profile"
                   target="_blank"
@@ -865,17 +871,19 @@ const autotradegold = () => {
                 >
                   &nbsp;Profile&nbsp;
                 </a>
-                dans la selection Crypto (Crypto Address).
+                du site.
               </p>
               <p>
                 Les retraits sont d'un minimum de 50$ et de maximum 2000$ par
-                jour pour les comptes avec un capital inférieur à 100000$. Les
-                comptes supérieurs peuvent retirer 10% du capital déposé par
+                jour pour les comptes avec un capital inférieur à 100000$.
+              </p>
+              <p>
+                Les comptes supérieurs peuvent retirer 10% du capital déposé par
                 jour.
               </p>
               <p>
-                Les frais de transaction sont de 20$ et est indepedente du
-                montant indiqué.
+                Les frais de transaction sont de 20$ ( montant fixe qui ne
+                dépend pas du montant du retrait).
               </p>
               <p>
                 Pour faire un retrait aller dans la section
@@ -889,7 +897,7 @@ const autotradegold = () => {
                     &nbsp;Transaction &gt; Deposit&nbsp;
                   </span>
                 </a>
-                et séléctioner votre crypto.
+                et sélectionnez votre crypto.
               </p>
               <p>
                 <span className="text-[#DF9622]">Amount USD:&nbsp;</span>
@@ -898,17 +906,18 @@ const autotradegold = () => {
               </p>
               <p>
                 <span className="text-[#DF9622]">Sources:&nbsp;</span>
-                Selectioner MT4 Account
+                Sélectionnez MT4 Account
               </p>
               <p>
                 <span className="text-[#DF9622]">Google 2FA OTP:&nbsp;</span>
-                Indiquer votre Google 2FA, si vous l'avez activé.
+                Indiquer votre Google 2FA, si vous l'avez activé. Sinon votre
+                mot de passe sera demandé
               </p>
               <p>
                 <span className="text-[#DF9622]">
                   I agree with the Terms and Conditions:&nbsp;
                 </span>
-                Accepter les conditions.
+                pour accepter les conditions.
               </p>
             </div>
             <div className="">
@@ -926,7 +935,7 @@ const autotradegold = () => {
         </h1>
         <div className="flex flex-col pt-20">
           <p className="font-medium rounded-full text-center text-white bg-gray-500 w-20">
-            etape 8
+            Etape 8
           </p>
           <div className="flex place-content-between pt-5 space-x-10 font-normal text-gray-500">
             <div className="text-lg space-y-3 flex flex-col w-9/12">
